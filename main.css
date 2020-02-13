@@ -1,0 +1,131 @@
+body {
+    background-color: #282828;
+}
+
+.jumbopic{
+    width: 100%;
+    max-height: 500px;
+}
+
+.jumbotron {
+    background-color: black;
+}
+
+.big-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Times New Roman", Times, serif;
+    color: snow;
+  }
+
+  .big-name > h1 {
+      font-size: 60px;
+  }
+
+  .big-name > p {
+      font-size: 30px;
+  }
+
+  #nav {
+      background-color: dimgrey;
+      height: 90px;
+  }
+  
+  .nav-link {
+      color: red;
+  }
+
+  .navbar {
+      float: right;
+  }
+
+  .welcome {
+      background-color: dimgrey;
+      text-align: center;
+      color: snow;
+      border: solid black 2px;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 10px;
+  }
+
+  #favorite-quotes {
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic; 
+      color: snow;
+      
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      
+  }
+
+  #quotes {
+      background-color: #282828;
+      margin: 10px;
+      
+  }
+
+  #quote-sections {
+      margin: 5px;
+      background-color: dimgrey;
+      border: solid black 2px;
+  }
+
+  #values-container {
+      background-color: dimgrey;
+      color: snow;
+      border: solid black 2px;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 10px;
+  }
+
+  #about {
+      background-color: dimgrey;
+      color: snow;
+      border: solid black 2px;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  .article {
+      background-color: dimgrey;
+      color: snow;
+      border: solid black 2px;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  .resume {
+      text-align: center;
+      
+  }
+
+  .resume-text {
+     margin: 10px; 
+     
+     color: snow;
+     font-family: 'Times New Roman', Times, serif;
+  }
+
+.form {
+    background-color: dimgrey;
+      color: snow;
+      border: solid black 2px;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+}
+
+ footer {
+     color: snow;
+     text-align: center;
+
+ }
+
+ .media-icon {
+     border-radius: 50%;
+     height: 75x;
+     width: 75px;
+ }
