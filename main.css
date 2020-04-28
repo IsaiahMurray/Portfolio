@@ -1,315 +1,422 @@
+/* body, background image, sakura animation*/
+/* source => https://codepen.io/yoma83/pen/YvZXBp */
+
+p{
+  font-size: 25px;
+}
+
 body {
-    background-color: #282828;
+  background-image: url(https://ak3.picdn.net/shutterstock/videos/4571003/thumb/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.jumbopic{
-    width: 100%;
-    max-height: 500px;
+.snow-bg {
+   content: '';
+   display: block;
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   pointer-events: none;
+   background-image: url('http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-1-1.png'), url('http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-2.png');
+  animation: snow 20s linear infinite;
+  background-attachment: fixed;
 }
 
- /* @import url('https://ak4.picdn.net/shutterstock/videos/2888044/thumb/1.jpg') repeat scroll 0 0 rgba(0, 0, 0 , 0);  */
-
-
-
-.jumbotron {
-    /* background-color: black; */
-    background: url("https://ak4.picdn.net/shutterstock/videos/2888044/thumb/1.jpg");
-    color: #eee;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-    animation: animation 50s linear infinite;
+@keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+ 100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
 
-@keyframes animation {
-    100%{
-     background-position:0px -3000px;
+@media (max-width: 768px) {
+    .woocommerce ul.products li.product, 
+    .woocommerce-page ul.products li.product, 
+    .woocommerce-page[class*=columns-] ul.products li.product,
+    .woocommerce[class*=columns-] ul.products li.product {
+        width: 100%;
+        float: left;
+        clear: both;
+        margin: 0 7em;
     }
-   }
+}
+
+#body-div{
+    z-index: 3;
+}
+
+/* nav bar */
+#main-nav{
+    background-color: transparent;
+    margin-bottom: 2%;
+}
+
+.nav-item{
+  background-color: transparent;
+  border: 2px solid snow;
+  margin: 4px 2px;
+  border-radius: 5px;
+}
+
+.nav-item > a{
+    color: snow !important;
+}
+
+.nav-item:hover {
+  border: 2px solid rgb(89, 89, 89);
+  background-color: snow;
+}
+
+.nav-item > a:hover{
+    color: black !important;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-color: rgb(89, 89, 89, 0.5);
+  border-radius: 25px;
+  width: auto;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective-origin: 50% 50%;
+  margin: 2%;
+  margin-top: 100px;
+}
 
 .big-name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Times New Roman", Times, serif;
-    color: snow;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Times New Roman", Times, serif;
+  color: snow;
+}
 
-  .big-name > h1 {
-      font-size: 60px;
-  }
+.big-name > h1 {
+    font-size: 60px;
+}
 
-  .big-name > p {
-      font-size: 30px;
-  }
+.big-name > p {
+    font-size: 30px;
+}
 
-  #nav {
-      background-color: dimgrey;
-      height: 90px;
-  }
-  
-  .nav-link {
-      color: red;
-  }
+/* welcome section */
 
-  .navbar {
-      float: right;
-  }
+#welcome {
+  background-color: rgb(89, 89, 89, 0.5);
+  width: auto;
+  color: snow;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective-origin: 50% 50%;
+  border-radius: 25px;
+  margin: 2%;
+}
 
-  #welcome {
-      background-color: dimgrey;
-      text-align: center;
-      color: snow;
-      border: solid black 2px;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      margin: 10px;
-  }
+#welcome-word
+{
+  color: snow;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  float: left;
+  margin: 0px;
+}
 
-  #welcome-word
-  {
-      color: snow;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      float: left;
-      margin: 0px;
-  }
+#welcome-text {
+color: snow;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: x-large;
+margin: 0px;
+}
 
-  #welcome-text {
-    color: snow;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: x-large;
-    margin: 0px;
-  }
+/* core values section */
 
-  #favorite-quotes {
-      font-family: 'Times New Roman', Times, serif;
-      font-style: italic; 
-      color: snow;
-      font-size: large;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      
-  }
+#core-values-section{
+  background-color: rgb(89, 89, 89, 0.5);
+  width: auto;
+  color: snow;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 25px;
+  align-items: center;
+  perspective-origin: 50% 50%;
+  margin: 2%;
+}
 
-  #quotes {
-      background-color: #282828;
-      margin: 10px;
-      
-  }
+#core-values {
+  display: flex;
+  justify-content: center;
+}
 
-  #quote-sections {
-      margin: 5px;
-      background-color: dimgrey;
-      border: solid black 2px; 
-  }
+#core-value{
+  margin: 5px;
+}
 
-  #about {
-      background-color: dimgrey;
-      color: snow;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      margin: 10px;
-  }
+#core-values-text{
+   text-align: center;
+}
 
-  .article {
-      background-color: dimgrey;
-      color: snow;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: x-large;
-      margin: 10px;
-  }
+/* quotes carousel */
 
-  .resume {
-      text-align: center;
-      
-  }
+#carousel-controls{
+  background-color: rgb(89, 89, 89, 0.5);
+  height: 60px;
+  border-radius: 25px;
+  margin: 2%;
+}
 
-  .resume-text {
-     margin: 10px; 
-     
-     color: snow;
-     font-family: 'Times New Roman', Times, serif;
-  }
+#favorite-quotes {
+  width: auto;
+  height: 60px;
+  color: snow;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective-origin: 50% 50%;
+}
+
+#quotes {
+margin: 10px;
+
+}
+
+#quote-sections {
+margin: 10px;
+}
+
+
+/* about and article */
+
+#about{
+  background-color: rgb(89, 89, 89, 0.5);
+  width: auto;
+  color: snow;
+  border-radius: 25px;
+  margin: 2%;
+}
+
+#profile-title {
+  width: auto;
+  color: snow;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective-origin: 50% 50%;
+}
+
+#profile-pic{
+float: left;
+margin: 2%;
+}
+
+.article {
+  width: auto;
+  color: snow;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective-origin: 50% 50%;
+}
+
+#paragraph{
+  margin: 30px;
+}
+
+/* resume */
+
+#resume-div{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#resume-link{
+  font-size: x-large;
+}
+
+/* skills */
+
+#skills-section{
+  border-radius: 25px;
+  background-color: rgb(89, 89, 89, 0.5);
+  width: auto;
+  margin: 2%;
+  align-items: center;
+  perspective-origin: 50% 50%;
+  color: snow;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#skills-header{
+text-align: center;
+}
+
+#skills{
+
+  margin: auto;
+  padding: 2%;
+}
+
+#skill-icon{
+  display: inline;
+  margin: 2%;
+}
+
+#skill-icon > img{
+  height: 75x;
+  width: 75px;
+}
+
+/* projects */
+
+#project-section{
+  background-color: rgb(89, 89, 89, 0.5);
+  width: auto;
+  color: snow;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 25px;
+  align-items: center;
+  perspective-origin: 50% 50%;
+  margin: 2%;
+}
+
+#project-header{
+text-align: center;
+}
+
+#project{
+  color: snow;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 2%;
+}
+
+#projects{
+  margin: auto;
+  padding: 2%;
+}
+
+#projects > div {
+    max-width: 250px;
+}
+
+#project-img{
+    
+  height: 175px;
+  width: 175px;
+  border-radius: 25px;
+}
+
+
+/* form */
 
 .form {
-    background-color: dimgrey;
-      color: snow;
-      border: solid black 2px;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-}
-
- footer {
-     color: snow;
-     text-align: center;
-
- }
-
- .media-icon {
-     border-radius: 50%;
-     height: 75x;
-     width: 75px;
-     margin: auto;
- }
-
- .col-sm > a{
-   text-align: center;
- }
-
- #core-values-text {
-    background-color: dimgrey;
+  background-color: dimgrey;
     color: snow;
+    border: solid black 2px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    margin: 10px;
-    height: 90px;
-    padding-top: 20px;
- }
+    z-index: 3;
+}
 
 .form-style-9{
-	max-width: 450px;
-	background: 282828;
-	padding: 30px;
-	margin: 50px auto;
-	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-	border-radius: 10px;
-	border: 6px solid dimgray;
+max-width: 450px;
+background: 282828;
+padding: 30px;
+margin: 50px auto;
+box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+border-radius: 10px;
+border: 6px solid dimgray;
 }
 .form-style-9 ul{
-	padding:0;
-	margin:0;
-	list-style:none;
+padding:0;
+margin:0;
+list-style:none;
 }
 .form-style-9 ul li{
-	display: block;
-	margin-bottom: 10px;
-	min-height: 35px;
+display: block;
+margin-bottom: 10px;
+min-height: 35px;
 }
 .form-style-9 ul li  .field-style{
-	box-sizing: border-box; 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; 
-	padding: 8px;
-	outline: none;
-	border: 1px solid #B0CFE0;
+box-sizing: border-box; 
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box; 
+padding: 8px;
+outline: none;
+border: 1px solid #B0CFE0;
 
 }.form-style-9 ul li  .field-style:focus{
-	box-shadow: 0 0 5px #B0CFE0;
-	border:1px solid #B0CFE0;
+box-shadow: 0 0 5px #B0CFE0;
+border:1px solid #B0CFE0;
 }
 .form-style-9 ul li .field-split{
-	width: 49%;
+width: 49%;
 }
 .form-style-9 ul li .field-full{
-	width: 100%;
+width: 100%;
 }
 .form-style-9 ul li input.align-left{
-	float:left;
+float:left;
 }
 .form-style-9 ul li input.align-right{
-	float:right;
+float:right;
 }
 .form-style-9 ul li textarea{
-	width: 100%;
-	height: 100px;
+width: 100%;
+height: 100px;
 }
 .form-style-9 ul li input[type="button"], 
 .form-style-9 ul li input[type="submit"] {
-	box-shadow: inset 0px 1px 0px 0px #3985B1;
-	background-color: black;
-	border: 1px solid red;
-	display: inline-block;
-	cursor: pointer;
-	color: #FFFFFF;
-	padding: 8px 18px;
-	text-decoration: none;
-	font: 12px Arial, Helvetica, sans-serif;
+box-shadow: inset 0px 1px 0px 0px #3985B1;
+background-color: black;
+border: 1px solid snow;
+display: inline-block;
+cursor: pointer;
+color: #FFFFFF;
+padding: 8px 18px;
+text-decoration: none;
+font: 12px Arial, Helvetica, sans-serif;
 }
 .form-style-9 ul li input[type="button"]:hover, 
 .form-style-9 ul li input[type="submit"]:hover {
-	background-color: dimgrey;
+background-color: dimgrey;
 }
 
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-    background-color: transparent;
-    width: 250px;
-    height: 225px;
-    margin: auto;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid black;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-box-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-box-back {
-    background-color: dimgrey;
-    color: snow;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    transform: rotateY(180deg);
-  }
+/* media icons */
 
-  #project-header{
-    background-color: dimgrey;
-    color: snow;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 10px;
-    height: 70px;
-    padding-top: 15px;
-  }
+#media-icons{
+  border-radius: 25px;
+  background-color: rgb(89, 89, 89, 0.5);
+  width: auto;
+  margin: 2%;
+  align-items: center;
+  perspective-origin: 50% 50%;
+}
 
-  #project{
-    color: snow;
-    font-family: 'Times New Roman', Times, serif;
-    margin: auto;
-  }
-  #colassal-sounds-project{
-    background-color: snow;
-  }
+#media-icons > col{
+  text-align: center;
+}
 
-  .projects{
-    display: inline-flexbox;
-  }
+#media-icon {
+  border-radius: 50%;
+  height: 75x;
+  width: 75px;
+}
 
-  #guessing-game{
-    background-color: snow;
-  }
+/* footer */
+
+footer {
+  color: snow;
+  text-align: center;
+
+}
