@@ -1,267 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="./main.css">
-</head>
-<body class="container">
-  <div class="snow-bg">
-  </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Isaiah Murray Portfolio</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Isaiah Murray</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+            <a class="nav-item nav-link" href="#project">Projects</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
 
-      <div id="body-div">
-          
-          <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-toggleable-md" id="main-nav">
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#home">Home</a>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#core-values-text">Core Values</a></li>
-              
-                          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Profile</a></li>
-              
-                          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Skills</a></li>
-                          
-                          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                      </ul>
-                  </div>
-           </nav>
+
+    <!--Header-->
+    <div class="jumbotron jumbotron-fluid" id="header">
+        <div class="container" id="header-text">
+          <h1 class="display-4">Isaiah Murray</h1>
+          <p class="lead">Junior .Net Developer</p>
+        </div>
+    </div>
+
+    <section class="container">
+        <div id="about" >
+        <div>
+          <h1 id="profile-title">Profile</h1>
+        </div>
+        
+        <div id="profile-pic">
+            <img alt="Isaiah Murray" src="https://media-exp1.licdn.com/dms/image/C5603AQG8frf8yjEszA/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=ZHQ3WgXyR592BtHVMfnUiS56b9w0ODSM1plcryYrBdo">
+        </div>
+        <article class="article">
+          <p id="paragraph">Hi, my name is Isaiah Murray. I am a young software developer and am very new to the technology industry. Previously, I was an aspiring chef, but I decided to change my career and explore the joys of development. I am very “teachable” due to my hunger for knowledge, as well as respectful, open-minded, fun,  and passionate. I am striving to become skillful software developer and transfer into video game development. My end goal dream job would be to work with augmented/virtual reality applications and software.
+          </p>
+        </article>
+      </div>
+
+        <section class="container">
+        <div id="resume-div">
+            <a class="btn btn-light" id="resume-link" role="button" target="_blank" href="https://docs.google.com/document/d/1_TNASbp7SEmYv_9rTQ9VHlP3bna_KMn8oVK_Fiv9nXg/edit?usp=sharing">Click here to check out my resume!</a>
+        </div>
+        <br>
+      </section>
       
       <section class="container">
-          <div id="home" class="jumbotron">
-              <div class="big-name">
-                <h1>Isaiah Murray</h1>
-                <p>Junior .Net Developer</p>
+          <div id="skills">
+              <div id="skills-header">
+                  <h2>My Skills</h2>
               </div>
-          </div>
-      </section> 
-
-      <section class="container">
-          <div id="welcome">
-              <div class="col-4" id="welcome-word">
-                  <h1>Welcome!</h1>
-              </div>
-              <div class="col-8" id="welcome-text">
-                  <p>If you're in need of a .Net developer with potential and drive then I'm just who you are looking for. I an Eleven Fifty Academy graduate who took part in their 12 week accelerated Software Development program. Scroll through my page and contact me when you're done. I look forward to talking to you!</h4>
-              </div> 
-          </div>
-      </section>
-
-      <section  class="container" id="core-values-section">
-          <div id="core-values-text">
-            <div>
-              <h1>Core Values</h1>
-            </div>
-          </div>
-          
-          <div id="core-values">
-          <div class="row" id="core-value">
-              <div class="col">
-                  <h4>Teamwork</h4>
-                  <p>Teamwork thrives on open and respectful communication, and healthy relationships between individuals that have the same goal in mind.</p>
-              </div>
-
-              <div class="col" id="core-value">
-                  <h4>Communication</h4>
-                  <p>I believe communication to be a vital for any workplace or relationship to thrive. Honest and open discussion helps to build the foundation of great teamwork.</p>
-              </div>
-
-              <div class="col" id="core-value">
-                  <h4>Fun</h4>
-                  <p>The most successful and efficient businesses I've worked for made an atmosphere that was both fun and productive. High morale and enjoying what you do is what turns a job into a passion.</p>
-              </div>
-          </div>
-          </div>
-      </section>
-
-      <hr>
-
-      <section class="container">
-          <div id="carousel-controls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <p id="favorite-quotes">Healing begins in the mind. ~Charles Roth</p>
-                </div>
-                <div class="carousel-item">
-                  <p id="favorite-quotes">Sometimes the only way to heal your wounds is to make peace with the demons that made them. ~Ishiro Serizawa</p>
-                </div>
-                <div class="carousel-item">
-                  <p id="favorite-quotes">We are who we decide to be. ~Paul Coelho</p>
-                </div>
-                <div class="carousel-item">
-                  <p id="favorite-quotes">Hope is something you give yourself. That is the meaning of inner strength. ~Iroh</p>
-                </div>
-                <div class="carousel-item">
-                  <p id="favorite-quotes">Life happens wherever you are, whether you make it or not. ~Iroh</p>
-                </div>
-
-                <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-      </section>
-
-      <hr>
-
-      <section class="container">
-          <div class="container" id="about" >
-          <div>
-            <h1 id="profile-title">Profile</h1>
-          </div>
-          
-          <div id="profile-pic">
-              <img src="https://media-exp1.licdn.com/dms/image/C5603AQG8frf8yjEszA/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=ZHQ3WgXyR592BtHVMfnUiS56b9w0ODSM1plcryYrBdo">
-          </div>
-          <article class="article">
-            <p id="paragraph">Hi, my name is Isaiah Murray. I am a young software developer and am very new to the technology industry. Previously, I was an aspiring chef, but I decided to change my career and explore the joys of development. I am very “teachable” due to my hunger for knowledge, as well as respectful, open-minded, fun,  and passionate. I am striving to become skillful software developer and transfer into video game development. My end goal dream job would be to work with augmented/virtual reality applications and software.
-            </p>
-          </article>
-        </div>
-          <hr>
-        
-          <section class="container">
-          <div id="resume-div">
-              <a class="btn btn-light" id="resume-link" role="button" href="https://docs.google.com/document/d/1_TNASbp7SEmYv_9rTQ9VHlP3bna_KMn8oVK_Fiv9nXg/edit?usp=sharing">Click here to check out my resume!</a>
-          </div>
-          <br>
-        </section>
-        
-        <hr>
-        
-        <section class="container">
-            <div id="skills-section">
-                <div id="skills-header">
-                    <h2>Skills</h2>
-                </div>
-                <div class="row" id="skills">
-                    <div class="col" id="skill-icon">
-                        <img src="https://image.flaticon.com/icons/svg/732/732212.svg">
-                    </div>
-
-                    <div class="col" id="skill-icon">
-                        <img src="https://image.flaticon.com/icons/svg/732/732190.svg">
-                    </div>
-
-                    <div class="col" id="skill-icon">
-                        <img src="https://image.flaticon.com/icons/svg/873/873107.svg">
-                    </div>
-
-                    <div class="col" id="skill-icon">
-                      <img src="https://image.flaticon.com/icons/svg/906/906324.svg">
-                    </div>
-
-                    <div class="col" id="skill-icon">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1024px-Bootstrap_logo.svg.png">
+              <ul class="container row" id="skill-icons">
+                  <li class="col">
+                        <a data-toggle="collapse" href="#icon-collapse-1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                          <img alt="HTML & CSS" id="skill-icon" src="https://image.flaticon.com/icons/svg/732/732212.svg">
+                        </a>
+                  </li>
+                  <li class="col">
+                        <a data-toggle="collapse" href="#icon-collapse-2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                          <img alt="Microsoft Azure" id="skill-icon" src="https://image.flaticon.com/icons/svg/2818/2818774.svg">
+                        </a>
+                  </li>
+                  <li class="col">
+                        <a data-toggle="collapse" href="#icon-collapse-3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                          <img alt="ASP.NET" id="skill-icon" src="https://www.vividsites.com/mm/images/development-dot-net-development-icon-lg.png">
+                        </a>
+                  </li>
+                  <li class="col">
+                        <a data-toggle="collapse" href="#icon-collapse-4" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                          <img alt="Agile" id="skill-icon" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/339_Trello-512.png">
+                        </a>
+                  </li>
+                  <li class="col">
+                        <a data-toggle="collapse" href="#icon-collapse-5" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                          <img alt="Git" id="skill-icon" src="https://i.dlpng.com/static/png/4028099_preview.webp">
+                        </a>
+                  </li>
+              </ul>
+              
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="icon-collapse-1">
+                    <div class="card card-body">
+                      Proficient in using HTML, CSS, and Bootstrap to make responsive websites.
                     </div>
                   </div>
-            </div>
-        </section>
-
-        <section class="container" id=project-section>
-          <div id="project-header">
-              <h2>Here is some of my work!</h2>
+                </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="icon-collapse-2">
+                    <div class="card card-body">
+                      Currently expanding my knowledge on using Microsoft Azure and cloud computing.
+                    </div>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="icon-collapse-3">
+                    <div class="card card-body">
+                      I have basic knowledge of C# and making MVC Applications with ASP.NET.
+                    </div>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="icon-collapse-4">
+                    <div class="card card-body">
+                      I enjoy using Agile methods to make working with teams both efficient and fun.
+                    </div>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="icon-collapse-5">
+                    <div class="card card-body">
+                      I have exposure to git via github and have used it with teams to create small projects.
+                    </div>
+                  </div>
+                </div>
           </div>
-          <div class="row" id="projects">
-            
-              <div class="col">
-                  <a id="project" href="https://lil-chefmvc.azurewebsites.net/"><img id="project-img" src="https://ci5.googleusercontent.com/proxy/2mrD5zy7dmqq4Q2Zkvai7kJ3ag8qLElCfLhyPVAvzn9-YZYXNBwH_ooZmYLB3qmdhrnLikurBEL1j_jHqH3R-DTWALRsi2sqm0MBZfCh80wgHiEr_8SIuV0ZrFkeNfRhGLzLXTQpkys3XxG4pOQH5fJycjsABi33=s0-d-e1-ft#https://www.freelogodesign.org/file/app/client/thumb/1687d08a-479a-4b12-881b-0933a624564f_200x200.png"></a>
-                  <p>Lil'Chef- MVC Recipe Sharing & Saving Web App</p>
-              </div>
+      </section>
 
-              <div class="col">
-                <a id="project" href="https://codepen.io/Salvation205/pen/Powgegb"><img id="project-img" src="https://allprowebdesigns.com/blog/wp-content/uploads/2020/01/css-art.jpg"></a>
-                <p>Codepen CSS Eye</p>
-              </div>
-
-              <div class="col">
-                <a id="project" href="https://isaiahmurray.github.io/StaticStoreFront/"><img id="project-img" src="https://www.containerstore.com/catalogimages/292806/10017962LgBottleWGlassDropperAmber_1.jpg?width=1200&height=1200&align=center"></a>
-                <p>Men's Self Care Static Storefront</p>
-              </div>
-
-              <div class="col">
-                <a id="project" href="https://github.com/ThomasLMartin/ColossalSounds"><img id="project-img" src="https://user-images.githubusercontent.com/60017318/76902633-d6f28580-6872-11ea-8580-cdb73616704b.png"></a>
-                <p>Music Store Web App</p>  
-              </div>
-
-              <div class="col">
-                <a id="project" href="https://github.com/IsaiahMurray/GuessingGame"><img id="project-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6syEi6B5ghbWeQRiR4G2c2OVt4TYhSTc-VPh8rwzVPqNLAO2I&usqp=CAU"></a>
-                <p>Guessing Game Console App</p>
-              </div>
-              
-              <div class="col">
-                  <a id="project" href="https://github.com/IsaiahMurray/ElevenNote"><img id="project-img" src="https://cdn.shopify.com/s/files/1/0763/0897/products/NP709_web_angle_a131388f-3e30-4b2d-8ae7-50e53b01a226_1024x1024.png?v=1572892299"></a>
-                  <p>ElevenNote- MVC Note Taking App</p>
-              </div>
-
-          </div>
-        </section>
-        
-        <hr>
-        
-        <section class="container">
-          <div class="row" id="media-icons">
-              <div class="col">
-                <a href="https://repl.it/@IsaiahMurray1"><img id="media-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/1200px-Repl.it_logo.svg.png"></a>
-              </div>
-              <div class="col">
-                <a href="https://codepen.io/Salvation205"><img id="media-icon" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png"></a>
-              </div>
-              <div class="col">
-                <a href="https://github.com/IsaiahMurray"><img id="media-icon" src="https://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png"></a>
-              </div>
-              <div class="col">
-                <a href="https://www.linkedin.com/in/isaiah-murray-36b906121/"><img id="media-icon" src="https://pluspng.com/img-png/linkedin-png-linkedin-social-icon-png-image-2034-512.png"></a>
-              </div>
-         </div>
-        
-         <hr>
-        
-        <form id="contact" action="https://formspree.io/xwkogabk" method="POST" class="form-style-9">
-          <ul>
-           <li>
-              <input type="text" name="Name" class="field-style field-split align-left" placeholder="Name" />
-              <input type="email" name="Email" class="field-style field-split align-right" placeholder="Email" />
+      <section class="container" id=project-section>
+        <div id="project-header">
+            <h2 style="color: snow;">Projects</h2>
+        </div>
+        <div class="row" id="projects">
           
-            </li>
-            <li>
-              <input type="text" name="Phone" class="field-style field-split align-left" placeholder="Phone" />
-              <input type="url" name="Website" class="field-style field-split align-right" placeholder="Website" />
-            </li>
-            <li>
-              <input type="text" name="Subject" class="field-style field-full align-none" placeholder="Subject" />
-            </li>
-            <li>
-              <textarea name="Message" class="field-style" placeholder="Message"></textarea>
-            </li>
-            <li>
-              <input type="submit" value="Send Message" />
-            </li>
-          </ul>
-        </form>
-        
-        <hr>
-        
-        <footer>
-          <p>© Isaiah Murray 2020</p>
-        </footer>
-        
-  </div> 
+            <div class="col hvr-grow">
+                <a id="project" href="https://lil-chefmvc.azurewebsites.net/"><img alt="Lil'Chef MVC" id="project-img" src="https://ci5.googleusercontent.com/proxy/2mrD5zy7dmqq4Q2Zkvai7kJ3ag8qLElCfLhyPVAvzn9-YZYXNBwH_ooZmYLB3qmdhrnLikurBEL1j_jHqH3R-DTWALRsi2sqm0MBZfCh80wgHiEr_8SIuV0ZrFkeNfRhGLzLXTQpkys3XxG4pOQH5fJycjsABi33=s0-d-e1-ft#https://www.freelogodesign.org/file/app/client/thumb/1687d08a-479a-4b12-881b-0933a624564f_200x200.png"></a>
+                <p>Lil'Chef- MVC Recipe Sharing & Saving Web App</p>
+            </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+            <div class="col hvr-pulse">
+              <a id="project" href="https://codepen.io/Salvation205/pen/Powgegb"><img alt="Codepen CSS Eye" id="project-img" src="https://allprowebdesigns.com/blog/wp-content/uploads/2020/01/css-art.jpg"></a>
+              <p>Codepen CSS Eye</p>
+            </div>
+
+            <div class="col hvr-grow">
+              <a id="project" href="https://isaiahmurray.github.io/StaticStoreFront/"><img alt="Static Store Front" id="project-img" src="https://www.containerstore.com/catalogimages/292806/10017962LgBottleWGlassDropperAmber_1.jpg?width=1200&height=1200&align=center"></a>
+              <p>Men's Self Care Static Storefront</p>
+            </div>
+
+            <div class="col hvr-grow">
+              <a id="project" href="https://github.com/ThomasLMartin/ColossalSounds"><img alt="Music Store Web App" id="project-img" src="https://user-images.githubusercontent.com/60017318/76902633-d6f28580-6872-11ea-8580-cdb73616704b.png"></a>
+              <p>Music Store Web App</p>  
+            </div>
+
+            <div class="col hvr-grow">
+              <a id="project" href="https://github.com/IsaiahMurray/GuessingGame"><img alt="Guessing Game Console App" id="project-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6syEi6B5ghbWeQRiR4G2c2OVt4TYhSTc-VPh8rwzVPqNLAO2I&usqp=CAU"></a>
+              <p>Guessing Game Console App</p>
+            </div>
+            
+            <div class="col hvr-grow">
+                <a id="project" href="https://github.com/IsaiahMurray/ElevenNote"><img alt="ElevenNote  Note Taking App" id="project-img" src="https://cdn.shopify.com/s/files/1/0763/0897/products/NP709_web_angle_a131388f-3e30-4b2d-8ae7-50e53b01a226_1024x1024.png?v=1572892299"></a>
+                <p>ElevenNote- MVC Note Taking App</p>
+            </div>
+
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="row" id="media-icons">
+            <div class="col">
+              <a href="https://repl.it/@IsaiahMurray1"><img id="media-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/1200px-Repl.it_logo.svg.png"></a>
+            </div>
+            <div class="col">
+              <a href="https://codepen.io/Salvation205"><img id="media-icon" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png"></a>
+            </div>
+            <div class="col">
+              <a href="https://github.com/IsaiahMurray"><img id="media-icon" src="https://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png"></a>
+            </div>
+            <div class="col">
+              <a href="https://www.linkedin.com/in/isaiah-murray-36b906121/"><img id="media-icon" src="https://pluspng.com/img-png/linkedin-png-linkedin-social-icon-png-image-2034-512.png"></a>
+            </div>
+       </div>
+
+       <form id="contact" action="https://formspree.io/xwkogabk" method="POST" class="form-style-9">
+        <ul>
+         <li>
+            <input type="text" name="Name" class="field-style field-split align-left" placeholder="Name" />
+            <input type="email" name="Email" class="field-style field-split align-right" placeholder="Email" />
+        
+          </li>
+          <li>
+            <input type="text" name="Phone" class="field-style field-split align-left" placeholder="Phone" />
+            <input type="url" name="Website" class="field-style field-split align-right" placeholder="Company" />
+          </li>
+          <li>
+            <input type="text" name="Subject" class="field-style field-full align-none" placeholder="Subject" />
+          </li>
+          <li>
+            <textarea name="Message" class="field-style" placeholder="Message"></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Send Message" />
+          </li>
+        </ul>
+      </form>
+      
+      <hr>
+      
+      <footer>
+        <p>© Isaiah Murray 2020</p>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- JS scroll to transform navbar color on scroll -->
+    <script>
+        $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 300);
+        });
+       </script>
+  </body>
 </html>
