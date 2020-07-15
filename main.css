@@ -1,19 +1,28 @@
-/* Body */
-body, html {
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  background-color: #676767;
-  font-family: 'Poppins', sans-serif;
-}
-
-body
-p
+body 
 {
-    font-size: x-large;
+  margin: 0;
+  background-color: #474B4F;
 }
 
+canvas {
+  display: block;
+  /*vertical-align: bottom;*/
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #222629;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -10;
+}
+  
 /* Navbar */
 .bg-dark {
   background:transparent !important;
@@ -23,28 +32,24 @@ p
   background:#000 !important;
 }
 
-
-/* Header */
-
+/* Header/Jumbotron */
 #header
 {
   color: snow;
   width: 100%;
-  height: 100%;
+  height: 600px;
   max-height: 100%;
-  background-image: url(https://images.unsplash.com/photo-1500829243541-74b677fecc30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: transparent;
+  position: relative;
 }
 
 #header-text
 {
   text-align: center;
-  position: absolute;
-  top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+  margin: 20%;
 }
 
 #about{
@@ -52,6 +57,7 @@ p
   color: snow;
   border-radius: 25px;
   margin: 2%;
+  position: absolute;
 }
 
 #profile-title {
@@ -64,15 +70,19 @@ p
 }
 
 #profile-pic{
-float: left;
-margin: 2%;
+  text-align: center;
+  margin: auto auto;
 }
 
 #profile-pic
 img
 {
-    border-radius: 15%;
-    border: snow solid 6px;
+  border-radius: 15%;
+  border: #61892F solid 6px;
+  height: 300px;
+  width: 200px;
+  min-width: 200px;
+  margin: auto;
 }
 
 .article {
@@ -82,6 +92,8 @@ img
   justify-content: center;
   align-items: center;
   perspective-origin: 50% 50%;
+  display: block;
+  min-width: 300px;
 }
 
 #paragraph{
@@ -102,22 +114,16 @@ img
 
 #skills{
   border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #6B6E70;
   width: auto;
   margin: 2%;
+  padding: 2%;
   align-items: center;
-  perspective-origin: 50% 50%;
   color: snow;
 }
 
 #skills-header{
 text-align: center;
-}
-
-#skills{
-
-  margin: auto;
-  padding: 2%;
 }
 
 #skill-icons{
@@ -127,10 +133,11 @@ text-align: center;
 #skill-icons
 li{
     list-style: none;
+    text-align: center;
 }
 
 #skill-icon{
-  display: inline;
+  display: inline-block;
   margin: 2%;
   height: 75x;
   width: 75px;
@@ -138,11 +145,18 @@ li{
 
 .card-body{
     color: black;
+    max-width: 400px;
 }
+
+
+
+
+  
+  
 
 /*  Projects */
 #project-section{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #6B6E70;
   width: auto;
   border-radius: 25px;
   align-items: center;
@@ -195,7 +209,7 @@ text-align: center;
 
 #media-icons{
   border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #6B6E70;
   width: auto;
   margin: 2%;
   align-items: center;
@@ -229,7 +243,7 @@ padding: 30px;
 margin: 50px auto;
 box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
 border-radius: 10px;
-border: 3px solid rgba(255, 255, 255, 0.5);
+border: 3px solid #6B6E70;
 }
 .form-style-9 ul{
 padding:0;
