@@ -366,7 +366,6 @@ footer {
 .flip-box-back {
   background-color: #6B6E70;
   color: snow;
-  font-family: 'Times New Roman', Times, serif;
   font-size: large;
   transform: rotateY(180deg);
 }

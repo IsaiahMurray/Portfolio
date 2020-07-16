@@ -58,7 +58,7 @@ particlesJS("particles-js", {
         "direction": "none",
         "random": false,
         "straight": false,
-        "out_mode": "bounce",
+        "out_mode": "out",
         "bounce": false,
         "attract": {
           "enable": false,
